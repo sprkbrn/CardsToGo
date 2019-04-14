@@ -7,12 +7,18 @@ type suite struct {
 	symbol string
 }
 
-var suites = []suite{
+// Suites is a list of suites
+var Suites = []suite{
 	suite{"diamonds", "♦"},
 	suite{"spades", "♠"},
 	suite{"hearts", "♥"},
 	suite{"clubs", "♣"},
 }
+
+var Diamonds = Suites[0]
+var Spades = Suites[1]
+var Hearts = Suites[2]
+var Clubs = Suites[3]
 
 type card struct {
 	value int
